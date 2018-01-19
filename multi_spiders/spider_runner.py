@@ -8,7 +8,6 @@ from multi_spiders.spiders.yueguang import YueguangSpider
 
 configure_logging({'LOG_FORMAT': '%(levelname)s: %(message)s'})
 
-# 一个spider对应一个进程
 runner = CrawlerRunner()
 runner.crawl(ZreadingSpider)
 runner.crawl(YueguangSpider)
